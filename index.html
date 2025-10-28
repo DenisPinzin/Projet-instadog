@@ -3,7 +3,422 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <!-- HEADER -->
+    <header class="text-center w-full border-b-2 border-gray-300 pb-4">
+      <div class="px-4 flex flex-col">
+        <a href=""><h1 class="text-3xl font-bold mb-6">Instadog</h1></a>
+        <nav>
+          <ul class="inline-flex list-none gap-x-6">
+            <li class="flex items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-house-icon lucide-house"
+              >
+                <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
+                <path
+                  d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+                />
+              </svg>
+            </li>
+
+            <li class="flex items-center">
+              <a class="relative inline-block" href=""
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-message-square-icon lucide-message-square"
+                >
+                  <path
+                    d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"
+                  />
+                </svg>
+                <span
+                  class="absolute top-0 right-0 translate-x-[65%] -translate-y-[65%] bg-red-500 text-white w-6 h-6 rounded-full flex items-center justify-center"
+                >
+                  1
+                </span>
+              </a>
+            </li>
+
+            <li class="flex items-center">
+              <a href=""
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-plus-icon lucide-plus"
+                >
+                  <path d="M5 12h14" />
+                  <path d="M12 5v14" /></svg
+              ></a>
+            </li>
+
+            <li class="flex items-center">
+              <a href=""
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-compass-icon lucide-compass"
+                >
+                  <path
+                    d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z"
+                  />
+                  <circle cx="12" cy="12" r="10" /></svg
+              ></a>
+            </li>
+
+            <li class="flex items-center">
+              <a href=""
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-bell-icon lucide-bell"
+                >
+                  <path d="M10.268 21a2 2 0 0 0 3.464 0" />
+                  <path
+                    d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"
+                  /></svg
+              ></a>
+            </li>
+
+            <li>
+              <a class="" href=""
+                ><img
+                  class="h-12 w-12 rounded-full border-3 border-gray-300"
+                  src="assets/img/profil.jpg"
+                  alt=""
+              /></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+
+    <main class="px-4">
+      <!-- FRIENDS PROFILS -->
+      <section class="pt-15">
+        <ul class="flex gap-6 overflow-x-auto whitespace-nowrap">
+          <li class="flex flex-col items-center">
+            <div class="h-25 w-25 p-1 rounded-full border-4 border-gray-300">
+              <img
+                class="h-full w-full rounded-full border-white"
+                src="assets/img/profil.jpg"
+                alt=""
+              />
+            </div>
+            <p>moi</p>
+          </li>
+
+          <li class="flex flex-col items-center">
+            <div
+              class="h-25 w-25 p-1 rounded-full bg-gradient-to-tr from-purple-600 via-pink-500 to-yellow-400"
+            >
+              <img
+                class="h-full w-full rounded-full border-3 border-white"
+                src="assets/img/dog-1.jpg"
+                alt=""
+              />
+            </div>
+            <p>rex</p>
+          </li>
+          <li class="flex flex-col items-center">
+            <div
+              class="h-25 w-25 p-1 rounded-full bg-gradient-to-tr from-purple-600 via-pink-500 to-yellow-400"
+            >
+              <img
+                class="h-full w-full rounded-full border-3 border-white"
+                src="assets/img/dog-2.jpg"
+                alt=""
+              />
+            </div>
+            <p>doug</p>
+          </li>
+          <li class="flex flex-col items-center">
+            <div
+              class="h-25 w-25 p-1 rounded-full bg-gradient-to-tr from-purple-600 via-pink-500 to-yellow-400"
+            >
+              <img
+                class="h-full w-full rounded-full border-3 border-white"
+                src="assets/img/dog-3.jpg"
+                alt=""
+              />
+            </div>
+            <p>luna</p>
+          </li>
+
+          <li class="flex flex-col items-center">
+            <div
+              class="h-25 w-25 p-1 rounded-full bg-gradient-to-tr from-purple-600 via-pink-500 to-yellow-400"
+            >
+              <img
+                class="h-full w-full rounded-full border-3 border-white"
+                src="assets/img/dog-1.jpg"
+                alt=""
+              />
+            </div>
+            <p>max</p>
+          </li>
+
+          <li class="flex flex-col items-center">
+            <div
+              class="h-25 w-25 p-1 rounded-full bg-gradient-to-tr from-purple-600 via-pink-500 to-yellow-400"
+            >
+              <img
+                class="h-full w-full rounded-full border-3 border-white"
+                src="assets/img/dog-2.jpg"
+                alt=""
+              />
+            </div>
+            <p>bella</p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- PUBLICATIONS -->
+      <section class="pt-12 flex flex-col gap-y-5">
+        <div class="border border-gray-300 rounded-lg">
+          <div class="flex items-center p-4">
+            <div class="h-10 w-10">
+              <img
+                class="h-full w-full rounded-full"
+                src="assets/img/dog-1.jpg"
+                alt=""
+              />
+            </div>
+            <div class="ml-4">
+              <h2 class="font-bold">rex</h2>
+              <p class="text-gray-400">Paris · 2 h</p>
+            </div>
+          </div>
+          <div class="w-full aspect-square">
+            <img
+              class="w-full h-full object-cover"
+              src="assets/img/dog-1.jpg"
+              alt=""
+            />
+          </div>
+          <div>
+            <div class="flex flex-col p-4 gap-3">
+              <div class="flex gap-3">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="30"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-bell-icon lucide-bell"
+                  >
+                    <path d="M10.268 21a2 2 0 0 0 3.464 0" />
+                    <path
+                      d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="30"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-message-square-icon lucide-message-square"
+                  >
+                    <path
+                      d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="30"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-navigation-icon lucide-navigation"
+                  >
+                    <polygon points="3 11 22 2 13 21 11 13 3 11" />
+                  </svg>
+                </div>
+              </div>
+              <p class="font-bold">1234 j'aime</p>
+              <p>
+                <span class="font-bold">rex</span> incroyable les nouvelles
+                croquettes que les humains m' ont achetés, elles sont folles !!
+                <span class="w-4 h-4 inline-block">
+                  <img
+                    class="w-full h-full"
+                    src="assets/img/chien-icon.png"
+                    alt=""
+                  />
+                </span>
+              </p>
+              <p class="text-gray-500">Voir les 24 commentaires</p>
+              <p class="text-gray-500 text-sm">Il y a 2 heures</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="border border-gray-300 rounded-lg">
+          <div class="flex items-center p-4">
+            <div class="h-10 w-10">
+              <img
+                class="h-full w-full rounded-full"
+                src="assets/img/dog-2.jpg"
+                alt=""
+              />
+            </div>
+            <div class="ml-4">
+              <h2 class="font-bold">doug</h2>
+              <p class="text-gray-400">Lyon · 5 h</p>
+            </div>
+          </div>
+          <div class="w-full aspect-square">
+            <img
+              class="w-full h-full object-cover"
+              src="assets/img/dog-2.jpg"
+              alt=""
+            />
+          </div>
+          <div>
+            <div class="flex flex-col p-4 gap-3">
+              <div class="flex gap-3">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="30"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-bell-icon lucide-bell"
+                  >
+                    <path d="M10.268 21a2 2 0 0 0 3.464 0" />
+                    <path
+                      d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="30"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-message-square-icon lucide-message-square"
+                  >
+                    <path
+                      d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="30"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-navigation-icon lucide-navigation"
+                  >
+                    <polygon points="3 11 22 2 13 21 11 13 3 11" />
+                  </svg>
+                </div>
+              </div>
+              <p class="font-bold">842 j'aime</p>
+              <p>
+                <span class="font-bold">doug</span> Ajourd'hui, on a essayé le
+                BARF, c'est incroyable !
+                <span class="w-4 h-4 inline-block">
+                  <img
+                    class="w-full h-full"
+                    src="assets/img/12373764.png"
+                    alt=""
+                  />
+                </span>
+              </p>
+              <p class="text-gray-500">Voir les 24 commentaires</p>
+              <p class="text-gray-500 text-sm">Il y a 2 heures</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="px-4 flex flex-col gap-y-2 py-8">
+      <ul class="list-none flex text-gray-500 text-sm gap-x-4">
+        <li><a href="">À propos</a></li>
+        <li><a href="">Aide</a></li>
+        <li><a href="">Presse</a></li>
+        <li><a href="">API</a></li>
+        <li><a href="">Carrières</a></li>
+      </ul>
+      <p class="text-gray-500 text-sm">© 2025 Instadog</p>
+    </footer>
+  </body>
 </html>
