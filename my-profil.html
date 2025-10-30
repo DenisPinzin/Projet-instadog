@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Mon-profil</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header
+      class="text-center w-full border-b-2 border-gray-300 pb-4 md:px-40 py-3"
+    >
+      <div
+        class="px-4 flex flex-col lg:flex-row lg:justify-between gap-y-6 md:gap-x-3"
+      >
+        <a href="index.html"><h1 class="text-3xl font-bold">Instadog</h1></a>
+        <div class="hidden relative md:flex md:w-full md:max-w-xs mx-auto">
+          <input
+            type="text"
+            placeholder="Rechercher"
+            class="w-full h-11 rounded-2xl border border-gray-300 bg-gray-50 pl-11 pr-4 text-gray-700 placeholder-gray-500"
+          />
+          <span class="h-5 absolute top-3 left-4 flex items-center">
+            <svg
+              class="w-6"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="11" cy="11" r="8"></circle>
+              <path d="m21 21-4.3-4.3"></path>
+            </svg>
+          </span>
+        </div>
+        <nav>
+          <ul class="inline-flex list-none gap-x-6">
+            <li class="flex items-center">
+              <a class="relative inline-block" href="index.html">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-house-icon lucide-house"
+                >
+                  <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
+                  <path
+                    d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+                  />
+                </svg>
+              </a>
+            </li>
+
+            <li class="flex items-center">
+              <a class="relative inline-block" href="messaging.html"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-message-square-icon lucide-message-square"
+                >
+                  <path
+                    d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"
+                  />
+                </svg>
+                <span
+                  class="absolute top-0 right-0 translate-x-[65%] -translate-y-[65%] bg-red-500 text-white w-6 h-6 rounded-full flex items-center justify-center"
+                >
+                  1
+                </span>
+              </a>
+            </li>
+
+            <li class="flex items-center">
+              <a href=""
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-plus-icon lucide-plus"
+                >
+                  <path d="M5 12h14" />
+                  <path d="M12 5v14" /></svg
+              ></a>
+            </li>
+
+            <li class="flex items-center">
+              <a href=""
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-compass-icon lucide-compass"
+                >
+                  <path
+                    d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z"
+                  />
+                  <circle cx="12" cy="12" r="10" /></svg
+              ></a>
+            </li>
+
+            <li class="flex items-center">
+              <a href=""
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-bell-icon lucide-bell"
+                >
+                  <path d="M10.268 21a2 2 0 0 0 3.464 0" />
+                  <path
+                    d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"
+                  /></svg
+              ></a>
+            </li>
+
+            <li>
+              <a class="h-12 w-12 shrink-0 flex" href=""
+                ><img
+                  class="h-full w-full rounded-full border-3 border-gray-300"
+                  src="assets/img/profil.jpg"
+                  alt=""
+              /></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main class="px-5 pt-8 md:px-40">
+      <!-- ====================== -->
+      <!-- ====================== -->
+      <!-- MY PROFIL -->
+      <section
+        class="flex flex-col border-b-2 border-gray-300 gap-4 pb-5 md:flex-row"
+      >
+        <a class="h-24 w-24 md:h-40 md:w-40 flex self-center shrink-0" href=""
+          ><img
+            class="h-full w-full rounded-full border-2 border-gray-300"
+            src="assets/img/profil.jpg"
+            alt=""
+        /></a>
+        <div class="flex flex-col gap-3 md:gap-5">
+          <div
+            class="flex flex-col items-center gap-y-2 sm:flex-row sm:justify-center sm:gap-x-5"
+          >
+            <a
+              class="font-medium border-2 rounded-sm border-gray-300 py-1 px-4"
+              href=""
+            >
+              Modifier le profil
+            </a>
+            <a
+              class="font-medium border-2 rounded-sm border-gray-300 py-1 px-4"
+              href=""
+            >
+              Voir l'archive
+            </a>
+            <a class="border-2 rounded-sm border-gray-300 py-1 px-4" href=""
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-bug-icon lucide-bug"
+              >
+                <path d="M12 20v-9" />
+                <path
+                  d="M14 7a4 4 0 0 1 4 4v3a6 6 0 0 1-12 0v-3a4 4 0 0 1 4-4z"
+                />
+                <path d="M14.12 3.88 16 2" />
+                <path d="M21 21a4 4 0 0 0-3.81-4" />
+                <path d="M21 5a4 4 0 0 1-3.55 3.97" />
+                <path d="M22 13h-4" />
+                <path d="M3 21a4 4 0 0 1 3.81-4" />
+                <path d="M3 5a4 4 0 0 0 3.55 3.97" />
+                <path d="M6 13H2" />
+                <path d="m8 2 1.88 1.88" />
+                <path d="M9 7.13V6a3 3 0 1 1 6 0v1.13" /></svg
+            ></a>
+          </div>
+          <div class="flex justify-between">
+            <p><span class="font-bold">42</span> publications</p>
+            <p><span class="font-bold">1258</span> abonnés</p>
+            <p><span class="font-bold">311</span> abonnements</p>
+          </div>
+          <div>
+            <h1 class="font-bold">Mon Nom</h1>
+            <p>Amateur de promenade & de bonne croquettes</p>
+            <a class="text-blue-500" href="">jaimelescroquettes.fr</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================== -->
+      <!-- ====================== -->
+      <!-- PUBLICATIONS -->
+
+      <section>
+        <!-- PUBLICATION BAR -->
+        <div>
+          <ul class="flex justify-center gap-4">
+            <li class="flex border-t-[3px] border-black pt-2 gap-x-2">
+              <div class="flex">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-layout-grid-icon lucide-layout-grid self-center"
+                >
+                  <rect width="7" height="7" x="3" y="3" rx="1" />
+                  <rect width="7" height="7" x="14" y="3" rx="1" />
+                  <rect width="7" height="7" x="14" y="14" rx="1" />
+                  <rect width="7" height="7" x="3" y="14" rx="1" />
+                </svg>
+              </div>
+              <a class="font-medium text-xs self-center" href=""
+                >PUBLICATIONS</a
+              >
+            </li>
+            <li class="flex text-gray-400 pt-2 gap-x-2">
+              <div class="flex">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-chevron-right-icon lucide-chevron-right self-center"
+                >
+                  <path d="m9 18 6-6-6-6" />
+                </svg>
+              </div>
+              <a class="font-medium text-xs self-center" href="">REELS</a>
+            </li>
+            <li class="flex text-gray-400 pt-2 gap-x-2">
+              <div class="flex">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-id-card-lanyard-icon lucide-id-card-lanyard self-center"
+                >
+                  <path d="M13.5 8h-3" />
+                  <path
+                    d="m15 2-1 2h3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h3"
+                  />
+                  <path d="M16.899 22A5 5 0 0 0 7.1 22" />
+                  <path d="m9 2 3 6" />
+                  <circle cx="12" cy="15" r="3" />
+                </svg>
+              </div>
+              <a class="font-medium text-xs self-center" href=""
+                >IDENTIFIÉ(E)</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- PUBLICATION PHOTO -->
+        <div class="flex flex-col pt-8 pb-8 gap-y-3 md:flex-row md:gap-3">
+          <div class="w-full flex-1">
+            <img
+              class="aspect-square w-full object-cover"
+              src="assets/img/dog-1.jpg"
+              alt=""
+            />
+          </div>
+          <div class="w-full flex-1">
+            <img
+              class="aspect-square w-full object-cover"
+              src="assets/img/dog-2.jpg"
+              alt=""
+            />
+          </div>
+          <div class="w-full flex-1">
+            <img
+              class="aspect-square w-full object-cover"
+              src="assets/img/dog-3.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ====================== -->
+    <!-- ====================== -->
+    <!-- FOOTER -->
+    <footer
+      class="px-4 flex flex-col gap-y-2 py-8 md:px-40 sm:text-start text-center"
+    >
+      <ul
+        class="list-none flex text-gray-500 text-sm gap-x-4 flex-col sm:flex-row sm:text-start text-center"
+      >
+        <li><a href="">À propos</a></li>
+        <li><a href="">Aide</a></li>
+        <li><a href="">Presse</a></li>
+        <li><a href="">API</a></li>
+        <li><a href="">Carrières</a></li>
+      </ul>
+      <p class="text-gray-500 text-sm">© 2025 Instadog</p>
+    </footer>
+  </body>
+</html>
